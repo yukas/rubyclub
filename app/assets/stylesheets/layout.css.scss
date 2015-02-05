@@ -1,0 +1,27 @@
+body {
+  font-family: Arial;
+	background-color: #EEEEEE;
+	width: 700px;
+	margin: 75px auto 30px auto;
+}
+
+#header {
+  position: relative;
+  
+  #logo {
+    display: block;
+    width: 348px;
+    height: 68px;
+    margin: 0px auto;
+  }
+  
+  #about-link {
+    position: absolute;
+    right: 0px;
+    top: 37px;
+  }
+}
+
+#rubyclub {
+  margin-top: 60px;
+}

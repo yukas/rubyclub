@@ -1,3 +1,19 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.article {
+  .article-date {
+    margin-bottom: 10px;
+  }
+  
+  .article-title {
+    font-size: 26px;
+    margin-bottom: 34px;
+  }
+  
+  .article-separator {
+    display: block;
+    margin: 47px auto 80px auto;
+  }
+}
