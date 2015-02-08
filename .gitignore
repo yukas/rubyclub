@@ -16,4 +16,8 @@
 !/log/.keep
 /tmp
 
+# Ignore Mac OS X specific files
 .DS_Store
+
+# Ignore envrc
+.envrc
