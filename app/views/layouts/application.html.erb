@@ -7,8 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div id="top-panel">
+    <% if admin? %>
+      <%= link_to "Написать статью", new_article_path, id: "logo" %> | 
+    <% end %>
+    
+    <%= link_to "Войти", new_session_path, id: "about-link" %>
+  </div>
+  
   <div id="header">
-    <%= link_to image_tag("logo.png"), nil, id: "logo" %>
+    <%= link_to image_tag("logo.png"), root_path, id: "logo" %>
     <%= link_to "О сайте", nil, id: "about-link" %>
   </div>
   

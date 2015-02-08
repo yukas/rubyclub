@@ -1,0 +1,21 @@
+<div class="article">
+  <div class="article-date">
+    <span class="published-at">
+      <% if article.published? %>
+        <%= l article.published_at, format: :date  %>
+      <% else %>
+        <%= t("article.not_published") %>
+      <% end %>
+    </span>
+    <% if admin? %>
+      &mdash;
+      <span class="edit-link"><%= link_to "Редактировать", edit_article_path(article) %></span>
+    <% end %>
+  </div>
+  <div class="article-title"><%= article.title %></div>
+  <div class="article-body">
+    <%= simple_format article.body %>
+  </div>
+
+  <%= image_tag "article-separator.png", class: "article-separator" %>
+</div>
