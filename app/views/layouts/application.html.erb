@@ -18,7 +18,7 @@
   
   <div id="header">
     <%= link_to image_tag("logo.png"), root_path, id: "logo" %>
-    <%= link_to "О сайте", nil, id: "about-link" %>
+    <%= link_to "О сайте", about_path, id: "about-link" %>
   </div>
   
   <% flash.keys.each do |key| %>
