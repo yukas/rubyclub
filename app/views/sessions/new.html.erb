@@ -1,11 +1,17 @@
 <div class="new-session-page" class="session-page">
-  <%= form_tag "/sessions" do %>
-    <%= label_tag :email %>
-    <%= text_field_tag :email %>
-        
-    <%= label_tag :password %>
-    <%= password_field_tag :password %>
+  <div class="new-session form">
+    <%= form_tag "/sessions" do %>
+      <div class="form-field">
+        <%= label_tag :email, t("email") %><br>
+        <%= text_field_tag :email %>
+      </div>
+      
+      <div class="form-field">
+        <%= label_tag :password, t("password") %><br>
+        <%= password_field_tag :password %>
+      </div>
     
-    <%= submit_tag %>
-  <% end %>
+      <%= submit_tag t("session.login") %>
+    <% end %>
+  </div>
 </div>

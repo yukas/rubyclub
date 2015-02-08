@@ -10,8 +10,12 @@ class ApplicationController < ActionController::Base
   end
   
   def login(email, password)
-    if email == ENV["EMAIL"] && password == ENV["PASSWORD"]
+    if email == ENV.fetch("EMAIL") && password == ENV.fetch("PASSWORD")
       session[:admin] = true
     end
+  end
+  
+  def logout
+    session[:admin] = false
   end
 end

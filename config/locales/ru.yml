@@ -1,13 +1,20 @@
 ru:
+  email: "Email"
+  password: "Пароль"
+  
+  session:
+    login: "Войти"
+    logout: "Выйти"
+    logged_in_succesfully: "Вы успешно вошли на сайт"
+    logged_out_succesfully: "Вы успешно вышли"
+    wrong_login_or_password: "Не правильный логин или пароль"
+  
   article:
     title: "Заголовок"
     body: "Содержание"
     published: "Опубликовать"
     published_at: "Дата публикации"
     not_published: "Не опубликован"
-  email:
-    order:
-      subject: "Билеты на событие «%{event}»"
   
   date:
     abbr_day_names:

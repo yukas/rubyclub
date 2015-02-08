@@ -32,3 +32,28 @@ body {
 #rubyclub {
   margin-top: 60px;
 }
+
+.flash {
+  padding: 10px;
+  margin-top: 20px;
+  
+  &.notice {
+    background: #9BDE8D;
+  }
+  &.alert {
+    background: #FF4852;
+  }
+}
+
+.form {
+  margin-bottom: 20px;
+  background: #DFDFDF;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-left: -20px;
+  width: 102%;
+  
+  .form-field {
+    margin-bottom: 20px;
+  }
+}
