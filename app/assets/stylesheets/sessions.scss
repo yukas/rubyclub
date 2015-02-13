@@ -2,14 +2,24 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.new-session {
-  input {
-    padding: 2px 5px;
-    font-size: 20px;
+.new-session-page {
+  .form {
+    width: 300px;
+    margin: 100px auto;
     
-    &#email {
-      width: 300px;
+    input {
+      padding: 4px 5px;
+      font-size: 16px;
+      margin-top: 7px;
+    
+      &#email {
+        width: 250px;
+      }
+      
+      &#password {
+        width: 200px;
+      }
     }
   }
-  
 }
+

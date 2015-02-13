@@ -19,6 +19,7 @@
 
 .article {
   .article-date {
+    font-size: 85%;
     margin-bottom: 10px;
   }
   
@@ -27,8 +28,13 @@
     margin-bottom: 34px;
   }
   
-  .article-separator {
+  .article-body {
+    line-height: 150%;
+  }
+  
+  .sep {
     display: block;
     margin: 47px auto 80px auto;
+    width: 80px;
   }
 }

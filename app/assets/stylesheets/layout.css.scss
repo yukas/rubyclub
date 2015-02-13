@@ -27,7 +27,7 @@ a:active {
 }
 
 body {
-  font-family: Arial;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
 	background-color: #EEEEEE;
   margin: 0px;
 }
@@ -84,13 +84,16 @@ body {
   margin-top: 60px;
 }
 
+#footer {
+  font-size: 85%;
+  margin-top: 50px;
+}
+
 .form {
   margin-bottom: 20px;
   background: #DFDFDF;
-  padding: 15px 20px;
+  padding: 25px 35px;
   border-radius: 5px;
-  margin-left: -20px;
-  width: 102%;
   
   .form-field {
     margin-bottom: 20px;
