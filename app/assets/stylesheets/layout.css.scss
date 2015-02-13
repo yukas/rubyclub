@@ -1,53 +1,87 @@
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
 h1 {
   font-size: 26px;
   font-weight: normal;
 }
 
+a:link,
+a:visited, {
+  color: #434343;
+}
+
+a:active {
+  color: #992E30;
+}
+
 body {
   font-family: Arial;
 	background-color: #EEEEEE;
-	width: 700px;
-	margin: 75px auto 30px auto;
+  margin: 0px;
 }
 
-#top-panel {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 10px;
+#body-wrap {
+	width: 700px;
+	margin: 0px auto 30px auto;
+  border-top: 5px solid #434343;
+  padding-top: 75px;
 }
 
 #header {
   position: relative;
+  margin-bottom: 100px;
   
   #logo {
-    display: block;
-    width: 348px;
-    height: 68px;
-    margin: 0px auto;
+    text-align: right;
+    position: relative;
+    float: right;
+    width: 300px;
+    height: 62px;
+    
+    img {
+      width: 300px;
+    }
+    
+    #main-menu {
+      position: absolute;
+      top: 80px;
+      left: 0px;
+      
+      a {
+        margin-right: 10px;
+      }
+    }
   }
   
-  #about-link {
+  .flash {
     position: absolute;
-    right: 0px;
-    top: 37px;
+    top: 5px;
+    max-width: 300px;
+    padding: 10px 15px;
+    
+    &.notice {
+      background: #9BDE8D;
+    }
+    &.alert {
+      background: #FF4852;
+    }
   }
 }
 
 #rubyclub {
   margin-top: 60px;
-}
-
-.flash {
-  padding: 10px;
-  margin-top: 20px;
-  
-  &.notice {
-    background: #9BDE8D;
-  }
-  &.alert {
-    background: #FF4852;
-  }
 }
 
 .form {

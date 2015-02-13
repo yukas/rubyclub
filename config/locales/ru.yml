@@ -1,6 +1,7 @@
 ru:
   email: "Email"
   password: "Пароль"
+  write_article: "Написать статью"
   
   session:
     login: "Войти"
@@ -15,6 +16,8 @@ ru:
     published: "Опубликовать"
     published_at: "Дата публикации"
     not_published: "Не опубликован"
+    created_successfully: "Статья создана успешно"
+    updated_successfully: "Статья обновлена успешно"
   
   date:
     abbr_day_names:
